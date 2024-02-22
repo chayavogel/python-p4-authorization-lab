@@ -33,6 +33,8 @@ with app.app_context():
 
     db.session.add_all(users)
 
+    print(users)
+
     print("Creating articles...")
     articles = []
     for i in range(100):
